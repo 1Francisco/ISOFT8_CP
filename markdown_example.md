@@ -14,7 +14,7 @@ Time out - video game
 
 ### ● STATUS:
 
-Proposed
+Proposed.
 
 ---
 
