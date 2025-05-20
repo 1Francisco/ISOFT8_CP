@@ -1,3 +1,3 @@
 # Programacion-concurrente
 
-# Los DELL Pancho
+# Los DELL Pancho.
