@@ -24,7 +24,7 @@ A Lock is a widely used synchronization mechanism in concurrent programming. It 
 ## Assigned Teams
 **Team: Los DELL Pancho**
 
-Team responsibilities:
+Team responsibilitiess:
 - Identify critical concurrency points in the game's code.
 - Implement and test the Lock mechanism for the timer.
 - Ensure no deadlocks or synchronization issues occur.
