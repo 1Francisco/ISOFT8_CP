@@ -53,8 +53,8 @@ class Borracho:
             self.usar_baño()
 
 borrachos = [Borracho("Carlos "), Borracho("Brayan "), Borracho("Zuñiga "), Borracho("Antuna "), Borracho("Pancho ")]
-# print("Hola mundo")
 
+#Se usan las dos acciones globales(llamar y el baño) y se rellenan las otras 3 de forma aleatoria.
 for ciclo in range(4):
     print(f"\n-- Ciclo {ciclo + 1} --")
     random.shuffle(borrachos)
