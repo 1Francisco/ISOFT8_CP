@@ -12,7 +12,7 @@ class Borracho:
         
 
     def tomar(self):
-        print(f"{self.nombre} esta tomando cerveza..")
+        print(f"{self.nombre} esta tomando cerveza...")
         time.sleep(1)
 
     def cantar(self):
