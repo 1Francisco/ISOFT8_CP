@@ -1,4 +1,4 @@
 # Programacion-concurrente
 
 # Los DELL Pancho
-Se desarrollo el programa de los "Borrachitos", en el cual fueron 5 ciclos en los que no se tenia que repetir ninguna accion por parte de los usuarios.
+Se desarrolló un programa denominado “Borrachitos”, el cual simula la conducta de un grupo de cinco personajes en un entorno controlado. El sistema se ejecutó en cinco ciclos consecutivos, durante los cuales cada personaje debía realizar una acción distinta en cada iteración. Uno de los principales requerimientos del programa fue garantizar que, en cada ciclo, ninguna acción especial (como llamar a su ex o usar el baño) fuera ejecutada por más de un individuo, y que cada personaje no repitiera la misma acción en el mismo ciclo. Este comportamiento fue controlado mediante lógica de asignación aleatoria con restricciones, junto con el uso de variables globales que indicaban la disponibilidad de recursos compartidos, como el baño o la línea telefónica.
