@@ -53,6 +53,7 @@ class Borracho:
             self.usar_baño()
 
 borrachos = [Borracho("Carlos "), Borracho("Brayan "), Borracho("Zuñiga "), Borracho("Antuna "), Borracho("Pancho ")]
+# print("Hola mundo")
 
 for ciclo in range(4):
     print(f"\n-- Ciclo {ciclo + 1} --")
