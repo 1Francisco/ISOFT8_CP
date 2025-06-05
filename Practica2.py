@@ -46,8 +46,7 @@ class Drunkard:
                 baño_ocupado = True
                 print(f"{self.nombre} está usando el baño...")
                 time.sleep(1)
-                print(f"{self.nombre} terminó de usar el baño...")
-                print("¡Baño Libre!")
+                print("Bartender: ¡Baño Libre!")
                 baño_ocupado = False
             else:
                 print(f"{self.nombre} no puede usar el baño, está ocupado...")
@@ -108,4 +107,5 @@ for ciclo in range(4):
     random.shuffle(acciones_asignadas)
     for drunkard, accion in acciones_asignadas:
         drunkard.realizar_accion(accion, bartender)
+
 
