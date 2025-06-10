@@ -3,7 +3,7 @@ import random
 
 baño_ocupado = False
 llamada_ocupada = False
-cervezas_servidas = {}  # Contador de cervezas por Drunkard
+cervezas_servidas = {}
 
 acciones_posibles = ["sirviendo_cerveza", "cantar", "llamar_ex", "usar_baño"]
 
@@ -40,7 +40,6 @@ class Drunkard:
     
     def usar_baño(self):
         global baño_ocupado
-        # Verificar si ha tomado al menos 1 cerveza
         if self.nombre in cervezas_servidas and cervezas_servidas[self.nombre] >= 1:
             if not baño_ocupado:
                 baño_ocupado = True
@@ -65,45 +64,35 @@ class Drunkard:
         elif accion == "usar_baño":
             self.usar_baño()
 
-# Crear personajes
 bartender = Bartender("Bartender")
 drunkards = [Drunkard("Carlos"), Drunkard("Brayan"), Drunkard("Zuñiga"), Drunkard("Antuna"), Drunkard("Pancho")]
 
-# Inicializar contador de cervezas
 for drunkard in drunkards:
     cervezas_servidas[drunkard.nombre] = 0
 
-# Función para asignar acciones asegurando que todos participen
 def asignar_acciones(drunkards):
-    # Hacer copia de la lista para no modificar la original
     drunkards_disponibles = drunkards.copy()
     random.shuffle(drunkards_disponibles)
     
-    # Asignar acciones prioritarias primero
     acciones_asignadas = []
     acciones_prioritarias = ["llamar_ex", "usar_baño"]
     
-    # Asignar acciones prioritarias a drunkards aleatorios
     for accion in acciones_prioritarias:
         if drunkards_disponibles:
             drunkard = drunkards_disponibles.pop()
             acciones_asignadas.append((drunkard, accion))
     
-    # Asignar el resto de acciones a los drunkards restantes
     for drunkard in drunkards_disponibles:
         accion = random.choice(["sirviendo_cerveza", "cantar"])
         acciones_asignadas.append((drunkard, accion))
     
     return acciones_asignadas
 
-# Ejecución del programa
 for ciclo in range(4):
     print(f"\n-- Ciclo {ciclo + 1} --")
     
-    # Asignar acciones asegurando que todos participen
     acciones_asignadas = asignar_acciones(drunkards)
     
-    # Ejecutar acciones en orden aleatorio
     random.shuffle(acciones_asignadas)
     for drunkard, accion in acciones_asignadas:
         drunkard.realizar_accion(accion, bartender)
