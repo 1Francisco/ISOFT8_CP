@@ -3,7 +3,7 @@
 # Los DELL Pancho
 
 # Requerimientos
-## 1.- Se agregara un "Bartender" que servirá la cerveza a los "Drunkards" por lo tanto la acción "TomarCervezar" cambiara a --> "Sirviendo Cerveza"
+## 1.- Se agregara un "Bartender" que servirá la cerveza a los "Drunkards" por lo tanto la acción "TomarCervezar" cambiara a --> "Sirviendo Cerveza".
 
 ### (No es necesario, que agreguen "tomando cerveza" nuevamente, se presupone que una vez servida será tomada).
 
