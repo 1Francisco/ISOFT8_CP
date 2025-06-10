@@ -96,5 +96,3 @@ for ciclo in range(4):
     random.shuffle(acciones_asignadas)
     for drunkard, accion in acciones_asignadas:
         drunkard.realizar_accion(accion, bartender)
-
-
