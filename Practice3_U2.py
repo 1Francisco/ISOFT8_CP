@@ -24,22 +24,22 @@ class DrunkardsSimulation:
         return 'Core2' if self.current_cycle % 2 != 0 else 'Core1'
 
     def pedir_cerveza(self, drunkard, core):
-        print(f"Ciclo {self.current_cycle}: {drunkard} está pidiendo cerveza")
+        print(f"Ciclo {self.current_cycle}: {drunkard} está pidiendo cervez.")
         self.stats['beer'][core] += 1
         time.sleep(0.3)
 
     def rockola(self, drunkard, core):
-        print(f"Ciclo {self.current_cycle}: {drunkard} está usando la rockola")
+        print(f"Ciclo {self.current_cycle}: {drunkard} está usando la rockola.")
         self.stats['rockola'][core] += 1
         time.sleep(0.3)
 
     def cantar(self, drunkard, core):
-        print(f"Ciclo {self.current_cycle}: {drunkard} está cantando")
+        print(f"Ciclo {self.current_cycle}: {drunkard} está cantando.")
         self.stats['sing'][core] += 1
         time.sleep(0.1)
 
     def bailar(self, drunkard, core):
-        print(f"Ciclo {self.current_cycle}: {drunkard} está bailando")
+        print(f"Ciclo {self.current_cycle}: {drunkard} está bailando.")
         self.stats['dance'][core] += 1
         time.sleep(0.1)
 
@@ -81,7 +81,7 @@ class DrunkardsSimulation:
         time.sleep(1)
 
     def run_simulation(self):
-        print("Iniciando simulación de borrachos en paralelo")
+        print("Iniciando simulación de borrachos en paralelo.")
         print(f"Core1: {', '.join(self.drunkards_core1)}")
         print(f"Core2: {', '.join(self.drunkards_core2)}\n")
 
