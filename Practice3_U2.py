@@ -61,7 +61,7 @@ class DrunkardsSimulation:
         cerveza_user = random.choice(cerveza_candidates)
         rockola_user = random.choice([d for d in rockola_candidates if d != cerveza_user] or [cerveza_user])
 
-        # Registrar los usuarios.
+        # Registrar los users
         self.log_recursos.append({
             'ciclo': self.current_cycle,
             'cerveza': cerveza_user,
