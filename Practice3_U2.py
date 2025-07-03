@@ -26,12 +26,12 @@ class DrunkardsSimulation:
     def pedir_cerveza(self, drunkard, core):
         print(f"Ciclo {self.current_cycle}: {drunkard} está pidiendo cervez.")
         self.stats['beer'][core] += 1
-        time.sleep(0.3)
+        time.sleep(0.1)
 
     def rockola(self, drunkard, core):
         print(f"Ciclo {self.current_cycle}: {drunkard} está usando la rockola.")
         self.stats['rockola'][core] += 1
-        time.sleep(0.3)
+        time.sleep(0.1)
 
     def cantar(self, drunkard, core):
         print(f"Ciclo {self.current_cycle}: {drunkard} está cantando.")
