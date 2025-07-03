@@ -8,6 +8,7 @@ class DrunkardsSimulation:
         self.drunkards_core1 = [f"Borrachito_{i}" for i in range(1, 7)]
         self.drunkards_core2 = [f"Borrachita_{i}" for i in range(1, 7)]
         
+    
         self.stats = {
             'beer': {'Core1': 0, 'Core2': 0},
             'rockola': {'Core1': 0, 'Core2': 0},
