@@ -24,7 +24,7 @@ class DrunkardsSimulation:
         return 'Core2' if self.current_cycle % 2 != 0 else 'Core1'
 
     def pedir_cerveza(self, drunkard, core):
-        print(f"Ciclo {self.current_cycle}: {drunkard} está pidiendo cervez.")
+        print(f"Ciclo {self.current_cycle}: {drunkard} está pidiendo cerveza.")
         self.stats['beer'][core] += 1
         time.sleep(0.1)
 
