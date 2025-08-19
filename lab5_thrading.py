@@ -74,7 +74,7 @@ def main():
         hilos.append(hilo)
         hilo.start()
     
-    # Esperar a que todos los hilos terminen
+    # Esperar a que todos los hilos terminen.
     for hilo in hilos:
         hilo.join()
     
