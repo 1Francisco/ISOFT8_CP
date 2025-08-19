@@ -13,9 +13,9 @@ class GrupoBorrachos:
         
     def usar_rockola(self):
         with self.rockola:
-            print(f"🎵 {self.nombre} está usando la ROCKOLA")
+            print(f" {self.nombre} está usando la ROCKOLA")
             time.sleep(random.uniform(0.5, 1.5))
-            print(f"🎵 {self.nombre} terminó de usar la ROCKOLA")
+            print(f" {self.nombre} terminó de usar la ROCKOLA")
             
     def usar_mesa_billar(self):
         with self.mesa_billar:
@@ -25,9 +25,9 @@ class GrupoBorrachos:
             
     def usar_bano(self, borracho):
         with self.bano:
-            print(f"🚽 {borracho} está usando el BAÑO")
+            print(f" {borracho} está usando el BAÑO")
             time.sleep(random.uniform(0.3, 1.0))
-            print(f"🚽 {borracho} terminó de usar el BAÑO")
+            print(f" {borracho} terminó de usar el BAÑO")
             
     def ciclo_borracho(self):
         # Cada borracho del grupo debe usar el baño individualmente.
@@ -43,7 +43,7 @@ class GrupoBorrachos:
             self.usar_rockola()
             
         self.ciclos_completados += 1
-        print(f"✅ {self.nombre} completó ciclo {self.ciclos_completados}")
+        print(f" {self.nombre} completó ciclo {self.ciclos_completados}")
         
     def ejecutar(self):
         while self.ciclos_completados < 5:
@@ -51,7 +51,7 @@ class GrupoBorrachos:
                 self.ciclo_borracho()
                 time.sleep(random.uniform(0.1, 0.5))
             except Exception as e:
-                print(f"❌ Error en {self.nombre}: {e}")
+                print(f" Error en {self.nombre}: {e}")
 
 def main():
     # Crear semáforos para los recursos compartidos
