@@ -30,7 +30,7 @@ class GrupoBorrachos:
             print(f"🚽 {borracho} terminó de usar el BAÑO")
             
     def ciclo_borracho(self):
-        # Cada borracho del grupo debe usar el baño individualmente
+        # Cada borracho del grupo debe usar el baño individualmente.
         for borracho in self.borrachos:
             self.usar_bano(borracho)
             
