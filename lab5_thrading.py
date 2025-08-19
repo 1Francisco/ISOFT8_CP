@@ -58,9 +58,7 @@ def main():
     rockola = threading.Semaphore(1)      # Solo 1 grupo a la vez
     mesa_billar = threading.Semaphore(1)  # Solo 1 grupo a la vez
     bano = threading.Semaphore(1)         # Solo 1 persona a la vez
-    
-    # Crear Lock adicional para controlar acceso a recursos críticos.
-    lock_contador = threading.Lock()
+
     
     # Crear los grupos de borrachos
     grupo_a = GrupoBorrachos("GrupoA", rockola, mesa_billar, bano)
